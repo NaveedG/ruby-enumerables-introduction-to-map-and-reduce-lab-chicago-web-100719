@@ -13,7 +13,6 @@ def map_to_no_change(source_array)
 end
 
 def map_to_double(source_array)
-  #source_array.map { |x| x * 2 }
   doubled_array = []
   x = 0
   while source_array.length > x
