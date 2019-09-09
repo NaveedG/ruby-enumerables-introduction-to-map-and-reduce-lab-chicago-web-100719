@@ -57,5 +57,10 @@ def reduce_to_all_true(source_array)
 end
 
 def reduce_to_any_true(source_array)
-  source_array.any?
+  x = 0
+  while source_array.length > x
+    return true if source_array[x] == true
+    x += 1
+  end
+  return false
 end
