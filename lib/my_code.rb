@@ -29,7 +29,13 @@ def map_to_double(source_array)
 end
 
 def map_to_square(source_array)
-  source_array.map { |x| x ** 2 }
+  squared_array = []
+  x = 0
+  while source_array.length > x
+    squared_array.push(source_array[x] * source_array[x])
+    x += 1
+  end
+  squared_array
 end
 
 def reduce_to_total(source_array, starting_point= 0)
