@@ -53,6 +53,7 @@ def reduce_to_all_true(source_array)
     return true if source_array[x]
     x += 1
   end
+  return false
 end
 
 def reduce_to_any_true(source_array)
