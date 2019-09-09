@@ -42,7 +42,7 @@ def reduce_to_total(source_array, starting_point= 0)
   #source_array.reduce(starting_point, :+)
   x = 0
   while source_array.length > x
-    source_array[x] += starting_point
+    starting_point += source_array[x]
     x += 1
   end
   starting_point
