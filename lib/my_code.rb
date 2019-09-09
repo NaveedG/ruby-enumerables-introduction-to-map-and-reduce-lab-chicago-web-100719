@@ -9,7 +9,13 @@ def map_to_negativize(source_array)
 end
 
 def map_to_no_change(source_array)
-  source_array
+  new_array = []
+  x = 0
+  while source_array.length > x
+    negativized_array.push(source_array[x])
+    x += 1
+  end
+  new_array
 end
 
 def map_to_double(source_array)
